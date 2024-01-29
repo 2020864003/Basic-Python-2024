@@ -49,3 +49,25 @@ multi_str2 = ('Line\n'
               'Line2\n'
               'Line3')
 print(multi_str2)
+
+## 불형(Bool형)
+
+isCheck = False
+print(isCheck)
+isCheck = True
+print(isCheck)
+
+answer = (3 == 6)
+print(answer)
+answer = (3.0 == 3)
+print(answer)
+
+## 자료형이 어떤 타입인지 체크
+
+print(type(apple))
+print(type(hundred))
+print(type(test_val))
+print(type(bit142))
+print(type(hex255))
+print(type(greeting))
+print(type(isCheck))
