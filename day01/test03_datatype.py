@@ -32,6 +32,7 @@ print(oct9)
 print(hex255)
 
 ## 문자형 - 파이썬에는 문자 문자열 차이가 없음
+## 복합자료형 = 리스트형, 튜플형
 greeting = 'Hello!'
 greeting = "Hello!"
 print(greeting)
