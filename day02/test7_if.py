@@ -8,5 +8,5 @@ now = datetime.datetime.now()
 if now.hour < 12 :
     print('AM')
 
-if now.hour >= 12 :
+else :
     print('PM')
