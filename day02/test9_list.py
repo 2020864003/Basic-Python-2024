@@ -76,3 +76,30 @@ print(std)
 val = std.pop(2)
 print(val)
 print(std)
+
+# clear() 
+list_5.clear()
+print(list_5) 
+
+#sort()
+print(list_1)
+#list_1.sort  -> 문자열, 숫자, 불 섞여 잇는 리스트 정리x
+
+std.sort()
+print(std)
+std.sort(reverse=True)
+print(std)
+
+#in, not in
+print(99 in std) #True
+print(98 in std) #False
+
+# reverse(), copy(), count()...
+# 리스트 : 전개 연산자 - 몰라도 됨
+list_a = [1,3,5]
+list_b = [2,4,6]
+list_c = [*list_a, list_b]
+print(list_c)
+
+list_d = [list_a, list_b]
+print(list_d)
