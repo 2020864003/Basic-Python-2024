@@ -51,5 +51,7 @@ print(list_4[2])
 ## insert(index, val) 리스트의 INDEX 이후에 VAL 추가
 print(list_1)
 list_1.append('Hello')
+print(list_1)
 
+list_1.insert(2, 100) # 2번째 인덱스에 값을 추가
 print(list_1)
