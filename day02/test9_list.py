@@ -41,4 +41,15 @@ list_4 = [7,8,9] # * 는 리스트 반복
 list_5 = [1,2,3]
 
 print(list_3 + list_4)
-print(list_5 + list_3 + list_4)
+print((list_5 + list_3 + list_4) * 2)
+
+#리스트 길이 함수 len()
+print(len(list_1))
+print(list_4[2])
+
+## append() 리스트 마지막에 하나 추가
+## insert(index, val) 리스트의 INDEX 이후에 VAL 추가
+print(list_1)
+list_1.append('Hello')
+
+print(list_1)
