@@ -26,4 +26,6 @@ print(list_1)
 
 ## list 연산
 print(list_1[2:4]) # : 뒤의 수는 추력하고 싶은 인덱스 + 1 이 필수
-print(list_1[3])
+print(list_1[2:3+1])
+print(list_1[-1])
+print(list_1[-5:-3])
