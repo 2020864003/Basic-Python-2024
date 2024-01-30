@@ -29,7 +29,7 @@ print(list_1[2:4]) # : 뒤의 수는 추력하고 싶은 인덱스 + 1 이 필�
 print(list_1[2:3+1])
 print(list_1[-1])
 print(list_1[-5:-3])
-print(list_1[4][2]) #[1,2,3,4] wnd 3만 가져 오기
+print(list_1[4][2]) #[1,2,3,4] wnd 3만 가져 오기 이중리스트
 
 list_2 = [[1,2,3],[4,5,6],[7,8,9]]
 print(list_2[1],[2]) #6
@@ -60,3 +60,19 @@ print(list_1)
 list_3.extend(list_4 + list_5)
 print(list_3)
 print(list_4)
+
+del list_4[2] # 리스트 인덱스 하나를 삭제
+print(list_4)
+
+# del list_4 
+# 리스트 자체를 삭제
+#print(list_4)
+
+val = list_5.pop()
+print(val) # 3만 출력
+print(list_5) # 나머지 두개 출력
+
+print(std)
+val = std.pop(2)
+print(val)
+print(std)
