@@ -55,3 +55,8 @@ print(list_1)
 
 list_1.insert(2, 100) # 2번째 인덱스에 값을 추가
 print(list_1)
+
+## EXTEND() 기존 리스트 확장
+list_3.extend(list_4 + list_5)
+print(list_3)
+print(list_4)
