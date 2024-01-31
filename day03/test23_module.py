@@ -19,3 +19,8 @@ print(round(3.5)) # 반올림(너무 사용하니까 MATH에 없음. 기본함�
 
 import math as m # 별명을 짓기
 print(m.sin(2))
+
+from math import pi, pow # 조심해서 사용해야함
+
+print(pi)
+print(pow(2, 10))
