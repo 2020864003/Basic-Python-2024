@@ -47,8 +47,10 @@ print(f'차번호는 {tucson.getPlateNumber}')
 print(f'색상은 {tucson.color}')
 tucson.moveForward()
 
+
+tucson.plate_num = '123하 7896'
+print(tucson)
+tucson.setPlateNumber('54로 5555')
+print(tucson)
 # ioniq = Car('98가7654', 'KIA', 'WHITE', 'MANUAL')
 # print(f'차번호는 {ioniq.plate_num}')
-
-# tucson.plate_num = '123Ha 7896'
-# print(tucson)
