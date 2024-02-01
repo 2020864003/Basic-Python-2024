@@ -109,7 +109,11 @@
 
 - PYTHON 활용
     - 주피터 노트북
-     - CTRL + SHIFT + P (명령팔레트) 로 시작
+        - CTRL + SHIFT + P (명령팔레트) 로 시작
+        - 사용방법(TEST31_JUPTERNB.IPYNB)에 있음
+
+    - FOLIUM 기본 사용
+    
 
 - 객체지향 (추후에...)
     - 오버로딩, 오버라이딩 = 재정의
