@@ -94,7 +94,10 @@
         return x / y # ZeroDivisionError 발생 
         #return 0
     ```
-    - 파일 입출력
+    - 파일 입출력 (택스트 파일 입출력)
+
+
+    
     - 가상환경
     
 
