@@ -113,7 +113,9 @@
         - 사용방법(TEST31_JUPTERNB.IPYNB)에 있음
 
     - FOLIUM 기본 사용
-    
+      
+    ![python1](https://github.com/ljunghwan0928/Basic-Python-2024/assets/128778304/7ca95254-4d30-4130-a7de-b200aa9a6b18)
+
 
 - 객체지향 (추후에...)
     - 오버로딩, 오버라이딩 = 재정의
