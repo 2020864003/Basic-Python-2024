@@ -5,7 +5,8 @@
 # mode : a(append = 내용 추가), r(read = 파일 읽기), w(write = 파일 쓰기)
 # encoding : cp949(한글), utf - 8(만국 공통어)
 
-f = open('sample.txt', mode= 'w', encoding='UTF-8')
+# f = open('C:\Sources\Basic-Python-2024\sample.txt', mode= 'w', encoding='UTF-8')
+f = open(r'sample.txt', mode= 'w', encoding='UTF-8')
 # ............ 뭔가를 한다.
 # write() 에서 엔터를 추가 할려면 마지막에 \n 추가하기
 f.write('안녕하세요. 우리는 IoT 개발자 과정입니다. \n') # mode = a, w
