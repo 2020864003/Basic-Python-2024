@@ -83,8 +83,20 @@
         > pip uninstall package # package 내 컴퓨터 삭제
         ```
     - 파일 입출력
-    - 예외처리
+    - 예외처리 => 비정상적 프로그램 종료 막기
+    ``` python
+    def divde(x, y) :
+        try :
+            return x / y
+        except ZeroDivisionError as e:
+            print('[오! 류!] => 제 숫자는 0이 될수 없습니다!')
+            return 0
+        return x / y # ZeroDivisionError 발생 
+        #return 0
+    ```
+    - 파일 입출력
     - 가상환경
+    
 
 - PYTHON 활용
     - 주피터 노트북

@@ -12,14 +12,21 @@ def multi(x, y) :
     return x * y
 
 def divde(x, y) :
-    return x / y # ZeroDivisionError 발생
+    try :
+        return x / y
+    except ZeroDivisionError as e:
+        print('[오! 류!] => 제 숫자는 0이 될수 없습니다!')
+        return 0
+    return x / y # ZeroDivisionError 발생 
+    #return 0
 
 def getOperands(): # 계산 할 수를 입력받음
      # 34. 을 넣었을대 예외 발생 Value Error 뜸
      try:
         a, b = map(int, input('두 수 입력(구분자 공백) > ').split())
         return a, b
-     except:
+     except ValueError as e:
+         # print(e) # 정확환 예외 메세지 출력
          print('입력 예외 : 정수만 입력하세요')
          return 1, 1
 
