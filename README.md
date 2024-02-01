@@ -74,14 +74,22 @@
 ## 4일차
 - PYTHON 기초
     - 패캐지, 모듈 계속
+        - pip 사용 
+
+        ```shell
+        > pip --version #버전확인
+        > pip list # 현재 설치된 라이브러리 목록 확인
+        > pip install package # package 내 컴퓨터 설치
+        > pip uninstall package # package 내 컴퓨터 삭제
+        ```
     - 파일 입출력
     - 예외처리
     - 가상환경
-    
+
 - PYTHON 활용
     - 주피터 노트북
 
     - 객체지향 (추후에...)
         - 오버로딩, 오버라이딩 = 재정의
         - 상속, 다중상속
-        - 추상클래스, 
+        - 추상클래스
