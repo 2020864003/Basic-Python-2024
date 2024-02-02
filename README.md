@@ -113,8 +113,8 @@
         - 사용방법(TEST31_JUPTERNB.IPYNB)에 있음
 
     - FOLIUM 기본 사용
-      - 이미지
-    https://raw.githubusercontent.com/ljunghwan0928/Basic-Python-2024/main/image/python1.png
+    ![Folium사용법](https://raw.githubusercontent.com/ljunghwan0928/Basic-Python-2024/main/image/python1.png)
+    
 
 
 
