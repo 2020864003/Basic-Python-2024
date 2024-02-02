@@ -107,16 +107,20 @@
     - 가상환경
     
 
-- PYTHON 활용
+- PYTHON 응용
     - 주피터 노트북
         - CTRL + SHIFT + P (명령팔레트) 로 시작
         - 사용방법(TEST31_JUPTERNB.IPYNB)에 있음
 
     - FOLIUM 기본 사용
-      
+      - 이미지
     ![python1](https://github.com/ljunghwan0928/Basic-Python-2024/assets/128778304/7ca95254-4d30-4130-a7de-b200aa9a6b18)
 
 
+
+## 5일차
+- 파이썬 응용
+    - 주피터 노트북 활용 - 구글 코랩(Google Colab)
 - 객체지향 (추후에...)
     - 오버로딩, 오버라이딩 = 재정의
     - 상속, 다중상속
