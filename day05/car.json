@@ -1,0 +1,19 @@
+{
+    "IONIQ": {
+        "price": 25000000,
+        "year": "2016",
+        "auto": true
+    },
+
+    "GENESIS": {
+        "price": 80000000,
+        "year": "2022",
+        "auto": true
+    },
+
+    "Ferrari": {
+        "price": 150000000,
+        "year": "2019",
+        "auto": false
+    }
+ }
