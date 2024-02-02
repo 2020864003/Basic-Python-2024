@@ -114,7 +114,7 @@
 
     - FOLIUM 기본 사용
       - 이미지
-    ![python1](https://github.com/ljunghwan0928/Basic-Python-2024/assets/128778304/7ca95254-4d30-4130-a7de-b200aa9a6b18)
+    https://raw.githubusercontent.com/ljunghwan0928/Basic-Python-2024/main/image/python1.png
 
 
 
