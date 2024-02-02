@@ -1,0 +1,12 @@
+{
+	"Audi": {
+		"price": "1000000000000",
+		"year": "2020",
+		"auto": true
+	},
+	"Porsche": {
+		"price": "25000000000",
+		"year": "2023",
+		"auto": true
+	}
+}
