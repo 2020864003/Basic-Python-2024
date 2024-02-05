@@ -15,6 +15,7 @@ class qtwin_exam(QWidget):
     def initUI(self):
         btn01 = QPushButton('Click', self)
         btn01.setGeometry(50, 100, 100, 40)
+        btn01.clicked.connect(self.btn01_clicked) # 버튼 클릭하면 버튼01_클릭ed 함수 실행 시키겠다.
 
         self.setGeometry(300, 200, 400, 200)
         self.setWindowTitle('Button Event!!')
