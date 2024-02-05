@@ -1,5 +1,5 @@
 # date : 20240205
-# file : test36_pyqt5.py
+# file : test37_pyqt5.py
 # desc : pyqt5 이벤트 만들기 (signal
 
 import sys
