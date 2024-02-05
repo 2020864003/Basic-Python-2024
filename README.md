@@ -131,9 +131,18 @@
 
 
 ## 6일차 
+
+- PYTON 라이브러리 경로 : C:\DEV-Roy\Langs\Python311\Lib\site-packages
 - 파이썬 응용
-    - 응용예제 연습
-        -
+    - WINDOWS APP(PyQt) 만들기
+
+    ```shell
+    > pip install PyQt5
+    > pip install PyQt5Designer
+    ```
+    - PyQt5 기본실행
+    
+
 
 -가상환경
 
