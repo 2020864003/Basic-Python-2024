@@ -45,6 +45,8 @@ class qtwin_exam(QWidget):
             QCloseEvent.ignore()
 
 
+    # Thread 에서 시그널이 넘어오면 UI 처리를 대신해주는 부분
+
 if __name__ == '__main__':
     loop = QApplication(sys.argv)
     instance = qtwin_exam()
