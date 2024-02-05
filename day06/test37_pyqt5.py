@@ -4,7 +4,7 @@
 
 import sys
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPainter, QColor, QFont
+from PyQt5.QtGui import QCloseEvent, QPainter, QColor, QFont
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QMessageBox
 
 class qtwin_exam(QWidget):
@@ -24,9 +24,14 @@ class qtwin_exam(QWidget):
     def btn1_clicked(self):
         QMessageBox.about(self, 'Button Click', 'You Clicked Button!!')
 
-
-
-
-loop = QApplication(sys.argv)
-instance = qtwin_exam()
-loop.exec_()
+    def closeEvent(self, QCloseEvent) -> None:
+        re = QMessageBox.question(self,'종료 확인','종료하실?', QMessageBox.Yes|QMessageBox.No)
+        if re == QMessageBox.Yes: # 닫기
+            QCloseEvent.accept()
+        else:
+            QCloseEvent.ignore()
+if __name__ == '__main__': # main entry 확인 조건 추가 
+    loop = QApplication(sys.argv)
+    instance = qtwin_exam()
+    instance.show()
+    loop.exec_()
