@@ -17,7 +17,7 @@ class qtwin_exam(QWidget):
         
 
     def btnStartClicked(self):
-        maxVal = 101
+        maxVal = 1000
         print('시작버튼 클릭')
         self.pgbTask.setValue(0)
         self.pgbTask.setRange(0, maxVal-1) # 0부터 100까지 
@@ -35,7 +35,7 @@ class qtwin_exam(QWidget):
     
 
     def closeEvent(self, QCloseEvent) -> None: # X버튼 종료확인
-        re = QMessageBox.question(self,'종료 확인','종료 하실겁니까?', QMessageBox.Yes|QMessageBox.No)
+        re = QMessageBox.question(self,'종료 확인','종료 하실?', QMessageBox.Yes|QMessageBox.No)
         if re == QMessageBox.Yes: # 닫기
             QCloseEvent.accept()
         else:

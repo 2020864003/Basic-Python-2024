@@ -141,7 +141,8 @@
     > pip install PyQt5Designer
     ```
     - PyQt5 기본실행
-    
+    - QtDesigner 
+
 
 
 -가상환경
