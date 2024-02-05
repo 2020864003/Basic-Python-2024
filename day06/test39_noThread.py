@@ -26,10 +26,11 @@ class qtwin_exam(QWidget):
            print(print_str)
            self.txbLog.append(print_str)
            self.pgbTask.setValue(i)
-           
+
         #    print(f'No Thread 출력 > {i}')
         #    self.pgbTask.setValue(i)
         #    self.txbLog.append(f'No Thread 출력 >> {i}')
+           
         # self.txbLog.append('상태 : 동작 시작')
     
 
