@@ -166,7 +166,8 @@
         def btnStartClicked(self):
             th = BackWorker(self)
             th.start() # BackWorker 내의 self.run() 실행
-            th.initSignal.connect(self.initPgbTask) # 스레드에서 초기화 시그널이 오면 initPgbTask 슬롯함수가 대신 처리
+            th.initSignal.connect(self.initPgbTask) 
+                # 스레드에서 초기화 시그널이 오면 initPgbTask 슬롯함수가 대신 처리
             # ...    
     ```
 
