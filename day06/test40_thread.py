@@ -17,13 +17,14 @@ class BackWorker(QThread): #PyQt에서 스레드 클래스 상속
     def run(self) -> None: # Thread 실행
         # Thread 동작할 내용
         maxVal = 100
-        self.parent.pgbTask.setValue(0) # 프로그레스바 0에서 시작
-        self.parent.pgbTask.setRange(0, maxVal-1) # 0~100
+        self.initSignal.emit(maxVal)
+        # self.parent.pgbTask.setValue(0) # 프로그레스바 0에서 시작
+        # self.parent.pgbTask.setRange(0, maxVal-1) # 0~100
         for i in range(maxVal): # 0 ~ 100
            print_str = f'No Thread 출력 > {i}'
            print(print_str)
-           self.parent.txbLog.append(print_str)
-           self.parent.pgbTask.setValue(i)
+        #    self.parent.txbLog.append(print_str)
+        #    self.parent.pgbTask.setValue(i)
     
 
 class qtwin_exam(QWidget):
@@ -36,6 +37,7 @@ class qtwin_exam(QWidget):
     def btnStartClicked(self):
         th = BackWorker(self)
         th.start() # BackWorker 내의 self.run() 실행
+        th.initSignal.connect(self.initPgbTask) # thread 
 
     def closeEvent(self, QCloseEvent) -> None: # X버튼 종료확인
         re = QMessageBox.question(self,'종료 확인','종료 하실?', QMessageBox.Yes|QMessageBox.No)
@@ -45,7 +47,19 @@ class qtwin_exam(QWidget):
             QCloseEvent.ignore()
 
 
-    # Thread 에서 시그널이 넘어오면 UI 처리를 대신해주는 부분
+    # Thread 에서 시그널이 넘어오면 UI 처리를 대신해주는 부분 슬롯함수
+    @pyqtSlot
+    def initPgbTask(self, maxVal):
+        self.pgtTask.setValue(0)
+        self.pgtTask.setValue(0, maxVal - 1)
+    
+    @pyqtSlot
+    def setTxbLog(self, msg):
+        self.txbLog.append(msg)
+
+    def setPgbTask(self, val):
+        self.pgbTask.setValue(val)
+
 
 if __name__ == '__main__':
     loop = QApplication(sys.argv)
