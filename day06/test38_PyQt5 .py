@@ -12,6 +12,13 @@ class qtwin_exam(QWidget):
     def __init__(self) -> None:
         super().__init__()
         uic.loadUi('./day06/TestApp.ui',self) #QtDesinger에서 만든 UI를 load
+
+    def closeEvent(self, QCloseEvent) -> None: # X버튼 종료확인
+        re = QMessageBox.question(self,'종료 확인','종료하실?', QMessageBox.Yes|QMessageBox.No)
+        if re == QMessageBox.Yes: # 닫기
+            QCloseEvent.accept()
+        else:
+            QCloseEvent.ignore()
         
 
     
