@@ -13,7 +13,7 @@ class qtwin_exam(QWidget):
         super().__init__()
         uic.loadUi('./day06/TestApp.ui',self) #QtDesinger에서 만든 UI를 load
         # BUTTON에 대한 시그널 처리 
-        self.btnStart.clicked.connect(self.btnStartClicked) #ui 파일내에 있는 위젯접근은 VScode상에서 색상으로 표시 x
+        self.btnStart.clicked.connect(self.btnStartClicked) # UI 파일내에 있는 위젯접근은 VScode상에서 색상으로 표시 x
         self.btnStop.clicked.connect(self.btnStopClicked)
 
     def btnStartClicked(self):
