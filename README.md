@@ -143,8 +143,8 @@
     - PyQt5 기본실행
     - QtDesigner 
     - ★★★Thread 학습 : UI쓰레드와 BACKGROUND 쓰레드 분리
-    ![Thread예제](https://raw.githubusercontent.com/ljunghwan0928/Basic-Python-2024/main/image/python2.png)
-    ![Thread예제](https://raw.githubusercontent.com/ljunghwan0928/Basic-Python-2024/main/image/python3.png)
+    ![Thread예제](https://raw.githubusercontent.com/ljunghwan0928/Basic-Python-2024/main/image/python2.gif)
+    ![Thread예제](https://raw.githubusercontent.com/ljunghwan0928/Basic-Python-2024/main/image/python3.gif)
         - GIL, 병렬 프로세싱 더 학습할 것
 
     - 가상환경
