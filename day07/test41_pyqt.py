@@ -23,7 +23,14 @@ class winApp(QWidget):
         self.setWindowIcon(QIcon('./image/iot.png'))
         self.setWindowTitle('Image Viewer')
         self.setGeometry(300, 300, 300, 300)
-        
+        self.show()
+        self.setCenter()
+
+    def setCenter(self): #윈도우 앱을 화면에 정중앙에 위치  
+        gm = self.frameGeometry() #윈도우 앱 자신 위치값
+        cp = QDesktopWidget().availableGeometry().center() # 모니터의 정중앙 값
+        gm.moveCenter(cp)
+        self.move(gm.topLeft())
 
 
 
@@ -33,5 +40,6 @@ if __name__ == '__main__':
     width, height = screen_react.width(), screen_react.height()
     print(width, 'x', height) # 활용도 높음
     inst = winApp()
-    inst.show()
+    # inst.show()
+    # inst.showFullscreen() -> 모니터를 꽉채워서 출력
     sys.exit(app.exec_()) # 종료시 리소스 변환등 효율
