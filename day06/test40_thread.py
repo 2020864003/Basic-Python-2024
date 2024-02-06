@@ -29,8 +29,8 @@ class BackWorker(QThread): #PyQt에서 스레드 클래스 상속
            print(print_str)
            self.setSignal.emit(i)
            self.setLog.emit(print_str)
-        #    self.parent.txbLog.append(print_str)
-        #    self.parent.pgbTask.setValue(i)
+        #  self.parent.txbLog.append(print_str)
+        #  self.parent.pgbTask.setValue(i)
     
 
 class qtwin_exam(QWidget):
