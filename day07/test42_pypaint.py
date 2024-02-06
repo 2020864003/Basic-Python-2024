@@ -6,6 +6,7 @@ import sys
 from PyQt5 import uic
 from PyQt5.QtCore import Qt, QRect
 from PyQt5.QtGui import *
+from PyQt5.QtGui import QMouseEvent
 from PyQt5.QtWidgets import QWidget,QApplication
 from PyQt5.QtWidgets import *
 from PyQt5.QtWidgets import QWidget
@@ -45,6 +46,9 @@ class winApp(QWidget):
     
     def btnClearClicked(self):
         print('All Erase')
+
+    def mouseMoveEvent(self, e) -> None:
+        print(e.x(), e.y())
 
 
     def setCenter(self): #윈도우 앱을 화면에 정중앙에 위치  
