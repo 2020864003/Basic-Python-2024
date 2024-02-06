@@ -41,6 +41,7 @@ class winApp(QWidget):
         self.btn_red.clicked.connect(self.btnRedClicked)
         self.btn_clear.clicked.connect(self.btnClearClicked)
         self.btn_load.clicked.connect(self.btnLoadClicked)
+        self.btn_save.clicked.connect(self.btnSavedCliced)
 
     def btnLoadClicked(self):
         image = QFileDialog.getOpenFileName(None, 'Image Load', '', 'Image File(*.jpg; *.png)')
@@ -51,6 +52,13 @@ class winApp(QWidget):
         self.lb_canvas.setPixmap(pixmap)
         self.lb_canvas.adjustSize() # image를 라벨 크기 맞추기
     
+    def btnSavedCliced(self):
+        filePath, _ = QFileDialog.getSaveFileName(self,'Image Save', '', 'Image File(*.jpg; *.png)') 
+        # print(filePath)
+        if filePath == '' :
+            return
+        self.lb_canvas.save(filePath) 
+
     def buttonClicked(self):
         btn_val = self.sender().objectName()
         print(btn_val)
