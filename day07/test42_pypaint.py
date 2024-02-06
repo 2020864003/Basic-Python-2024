@@ -1,5 +1,5 @@
 # date : 20240206
-# file : test42_pipaint.py
+# file : test42_pypaint.py
 # desc : 그림판
 
 import sys
