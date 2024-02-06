@@ -57,7 +57,8 @@ class winApp(QWidget):
         # print(filePath)
         if filePath == '' :
             return
-        self.lb_canvas.save(filePath) 
+        pixmap = self.lb_canvas.pixmap()
+        pixmap.save(filePath)
 
     def buttonClicked(self):
         btn_val = self.sender().objectName()
