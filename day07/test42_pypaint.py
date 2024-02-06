@@ -41,24 +41,50 @@ class winApp(QWidget):
         self.btn_red.clicked.connect(self.btnRedClicked)
         self.btn_clear.clicked.connect(self.btnClearClicked)
 
+    def buttonClicked(self):
+        btn_val = self.sender().objectName()
+        print(btn_val)
+        if btn_val == 'btn_black': # Black Button Click
+            self.brushColor = Qt.black
+        elif btn_val == 'btn_red': # Red Button Click
+            self.brushColor = Qt.red
+        elif btn_val == 'btn_blue': # Blue Button Click
+            self.brushColor = Qt.blue
+        elif btn_val == 'btn_clear':
+            self.canvas.fill(QColor('white'))
+            self.lb_canvas.setPixmap(self.canvas)
+
 
     def btnBlackClicked(self):
         btn_val = self.sender().objectName() # self.sender() btn_black
         print(btn_val)
+        self.brushColor = Qt.black
 
     def btnBlueClicked(self):
         btn_val = self.sender().objectName() # self.sender() btn_blue
         print(btn_val)
+        self.brushColor = Qt.blue
 
     def btnRedClicked(self):
         btn_val = self.sender().objectName() # self.sender() btn_red
         print(btn_val)    
-    
+        self.brushColor = Qt.red
+
     def btnClearClicked(self):
-        print('All Erase')
+        btn_val = self.sender().objectName() # self.sender() btn_clear
+        print(btn_val)   # btn_clear
+        self.canvas.fill(QColor('white'))
+        self.lb_canvas.setPixmap(self.canvas)
+        # print('All Erase')
+
 
     def mouseMoveEvent(self, e) -> None:
         print(e.x(), e.y())
+        brush = QPainter(self.lb_canvas.pixmap()) # 
+        brush.setPen(QPen(self.brushColor, 5, Qt.SolidLine, Qt.RoundCap))
+        brush.drawPoint(e.x(), e.y())
+        brush.end()
+        self.update() # 화면 Update
 
 
     def setCenter(self): #윈도우 앱을 화면에 정중앙에 위치  
