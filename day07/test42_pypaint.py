@@ -40,6 +40,10 @@ class winApp(QWidget):
         self.btn_blue.clicked.connect(self.btnBlueClicked)
         self.btn_red.clicked.connect(self.btnRedClicked)
         self.btn_clear.clicked.connect(self.btnClearClicked)
+        self.btn_load.clicked.connect(self.btnLoadClicked)
+
+    def btnLoadClicked(self):
+        image = QFileDialog.getOpenFileName(None, 'Image Load', '', 'Image File(*.jpg|*png)')
 
     def buttonClicked(self):
         btn_val = self.sender().objectName()
