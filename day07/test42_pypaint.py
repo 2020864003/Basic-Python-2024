@@ -43,8 +43,14 @@ class winApp(QWidget):
         self.btn_load.clicked.connect(self.btnLoadClicked)
 
     def btnLoadClicked(self):
-        image = QFileDialog.getOpenFileName(None, 'Image Load', '', 'Image File(*.jpg|*png)')
-
+        image = QFileDialog.getOpenFileName(None, 'Image Load', '', 'Image File(*.jpg; *.png)')
+        imagePath = image[0]
+        # print(imagePath)
+        pixmap = QPixmap(imagePath).scaledToHeight(381) # 파일경로에 있는 이미지를 읽어서 객체에 업로드
+    
+        self.lb_canvas.setPixmap(pixmap)
+        self.lb_canvas.adjustSize() # image를 라벨 크기 맞추기
+    
     def buttonClicked(self):
         btn_val = self.sender().objectName()
         print(btn_val)
