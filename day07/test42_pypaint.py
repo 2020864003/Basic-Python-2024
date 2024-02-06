@@ -18,14 +18,24 @@ class winApp(QWidget):
         self.initSignal()
 
 
-    def initUI(self):
+    def initUI(self): # 화면 초기화
         uic.loadUi('./day07/pyPaint.ui', self)
         self.setWindowIcon(QIcon('./image/iot.png'))
         self.setWindowTitle('Drawing Painting')
+        # canvas 초기화
+        self.brushColor = Qt.black
+        self.canvas = QPixmap(self.lb_canvas.width(), self.lb_canvas.height())
+        self.canvas.fill(QColor('white'))
+        self.lb_canvas.setPixmap(self.canvas)
+
+        self.btn_black.setStyleSheet('background:black;')
+        self.btn_blue.setStyleSheet('background:blue;')
+        self.btn_red.setStyleSheet('background:red;')
+        
         self.show()
         self.setCenter()
 
-    def initSignal(self):
+    def initSignal(self): # 동작 초기화
         self.btn_black.clicked.connect(self.btnBlackClicked)
         self.btn_blue.clicked.connect(self.btnBlueClicked)
         self.btn_red.clicked.connect(self.btnRedClicked)
