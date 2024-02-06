@@ -189,7 +189,7 @@
     - PyQt5 + 응용 예제 연습
         - 이미지 뷰어
         - 이미지 에디터
-        ![PyQt예제](https://raw.githubusercontent.com/ljunghwan0928/Basic-Python-2024/main/image/cat1.png)
+        ![PyQt예제](https://raw.githubusercontent.com/ljunghwan0928/Basic-Python-2024/main/image/cat.png)
 
 - 객체지향 (추후에...)
     - 오버로딩, 오버라이딩 = 재정의
