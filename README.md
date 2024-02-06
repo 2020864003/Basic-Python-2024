@@ -188,9 +188,14 @@
 
     - PyQt5 + 응용 예제 연습
         - 이미지 뷰어
+        - 이미지 에디터
+        ![PyQt예제](https://raw.githubusercontent.com/ljunghwan0928/Basic-Python-2024/main/image/cat1.png)
 
 - 객체지향 (추후에...)
     - 오버로딩, 오버라이딩 = 재정의
     - 상속, 다중상속
     - 추상클래스
 
+## 8일차 
+- 파이썬 응용
+- 파이썬 기본 코딩테스트
