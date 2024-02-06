@@ -21,7 +21,10 @@ class winApp(QWidget):
         lblImage.setPixmap(pixmap)
 
         lblSize = QLabel(self)
+        lblSize.setFont(QFont('NanumGothicCoding', 15)) # Font + Font Size
+        lblSize.setStyleSheet('Color: Blue')
         lblSize.setText(f'{pixmap.width()}x{pixmap.height()}')
+        lblSize.setAlignment(Qt.AlignmentFlag.AlignHCenter | Qt.AlignmentFlag.AlignVCenter) # 가로중앙정렬 | 세로 중앙정렬
         # kitty.jpg의 width heigth
 
         vbox = QVBoxLayout(self) # QtDesigner VerticalLayout 위젯 생성
