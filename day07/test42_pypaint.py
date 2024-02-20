@@ -19,9 +19,10 @@ class winApp(QWidget):
 
 
     def initUI(self): # 화면 초기화
-        uic.loadUi('./day07/pyPaint.ui', self)
-        self.setWindowIcon(QIcon('./image/iot.png'))
-        self.setWindowTitle('Drawing Painting')
+        uic.loadUi('pyPaint.ui', self) # 실행파일 생성시 경로에 상대경로가 없어져야함
+        # self.setWindowIcon(QIcon('./image/iot.png')) 
+        self.setWindowIcon(QIcon('iot.png')) 
+        self.setWindowTitle('Drawing Painting') # 실행파일 생성시는 경로에 상대경로 제거
         # canvas 초기화
         self.brushColor = Qt.black
         self.canvas = QPixmap(self.lb_canvas.width(), self.lb_canvas.height())
