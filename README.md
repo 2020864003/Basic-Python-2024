@@ -207,4 +207,4 @@
 -  파이썬 실행파일 만들기
     - PyQt ui파일이나 이미지 파일의 경로 절대경로가 지정
     - pip install pyinstaller 패키지 설치
-    - pyinstaller -w -F 필요한 파이썬.py
+    - pyinstaller -w -F 필요한 파이썬.py (-w: 콘솔창 없애기, -F: 실행파일 하나로 만들기)
